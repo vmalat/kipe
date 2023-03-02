@@ -1,12 +1,12 @@
-# KIPE - KIcad Parser and Editor
+# KIPE - KiCad Parser and Editor
 
 >Project will be translated to english and migrated to the GIT in few weeks.
 
-The project is aimed for usage of Kicad (version 7) to drawing of industrial electric diagrams.
+The project is aimed for usage of KiCad (version 7) to drawing of industrial electric diagrams.
 
 Project is derived from KIPE for version 4 and was actively developed and used since year 2016 (for example see figure below).
 
-__KIPE is intended to run above the Kicad's project file and edit Kicad's schematic file to:__
+__KIPE is intended to run above the KiCad's project file and edit KiCad's schematic file to:__
 * create the references for global labels
 * create the references for the components (eg. relays)
 * create pin number of the "subcomponents" (eg. contacts of the relay, input block of PLC etc.)
@@ -20,6 +20,6 @@ __There are few limitations to usage of the whole KIPE system:__
 * hieararchical pins are not allowed
 * library component shall have special fileds
 
-__Example created by KIPE for Kicad4:__
+__Example created by KIPE for KiCad 4:__
 
 ![kicad4_example](https://user-images.githubusercontent.com/124931409/222565988-7076cebb-986b-4b37-a39e-b1f20e59036f.png)
