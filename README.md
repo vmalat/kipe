@@ -1,2 +1,1 @@
-# kipe
-KIcad Parser and Editor
+# KIPE - KIcad Parser and Editor
