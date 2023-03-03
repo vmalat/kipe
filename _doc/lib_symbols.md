@@ -32,3 +32,12 @@ There shall be defined user fields in each root symbol:
 * __REFx__ - Location of the sub symbol, where x=1..99 (eg. REF1, REF2 etc.) The vlue of the __REFx__ shall be set as location of the sub symbol by KIPE.
 * __VENDOR__ - Vendor of the device, mandatory for BOM purposes.
 * __VENDORID__ - means the type of the device, manufacturer id etc. Mandatory for BOM purposes.
+
+    ![root_symbol_properties](img/root_symbol_properties.png)
+    
+## Sub symbol - creating user defined fiels
+
+There shall be defined user fields in each sub symbol:
+* __REF1__ - Location of the root symbol. The value of the field __REF1__ shall be set by KIPE.
+* __PINx__ - Defines pin number to change (if needed) as defined in the root symbol.
+
