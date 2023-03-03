@@ -25,7 +25,7 @@ __There are few limitations to usage of the whole KIPE system:__
 
 __Example created by KIPE for KiCad 4:__
 
-![kicad4_example](https://user-images.githubusercontent.com/124931409/222565988-7076cebb-986b-4b37-a39e-b1f20e59036f.png)
+![kicad4_example](_doc/img/kicad4_example.png)
 
 ## Short description
 
