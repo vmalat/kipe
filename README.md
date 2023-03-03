@@ -112,8 +112,8 @@ Here is the list of functions and the possibility of running them without specia
 | mkflat | Creates the "flat" structure of the project. Removes duplicity sheet, adapts symbol instances. | :heavy_check_mark:|
 | findcr REGEXP | Finds the location of symbol(s) given by the REGEXP. Eg. ```findcr -K.*``` will print all symbol with references start by -K | :heavy_check_mark:|
 | load PRO | Loads the project from \*.kicad_pro. Eg. load ../my_project.kicad_pro | :heavy_check_mark:|
-| save | Save changes in project done by KIPE. :exclamation: use backup if the project before saving project.| :warning: The shall be no error in executed command  
-save-force |  Save changes in project done by KIPE even if there were any error in executed commands. :exclamation: use backup if the project before saving project. | :heavy_check_mark:|
+| save | Save changes in project done by KIPE. :exclamation: backup the project before saving project.| :warning: The shall be no error in executed command  
+save-force |  Save changes in project done by KIPE even if there were any error in executed commands. :exclamation: backup the project before saving project. | :heavy_check_mark:|
 | help | Prints all command. | :heavy_check_mark:
 | exit | Exits the console. | :heavy_check_mark:|
 | console | Start console mode | :heavy_check_mark:| 
