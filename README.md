@@ -5,7 +5,7 @@ The project is aimed for usage of KiCad (version 7) to drawing of industrial ele
 * is free
 * the source files are pure texts, so additionaly parsing, tracking changes via versioning system is very easy
 
-Project is derived from KIPE for version 4 and was actively developed and used since year 2016 (for example see figure below).
+Project is derived from KIPE for KiCad version 4 and was actively developed and used since year 2016 (for example see figure below).
 
 __KIPE is intended to run above the KiCad's project file and edit KiCad's schematic file to:__
 * "flatten" diagram
