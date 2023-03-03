@@ -10,6 +10,7 @@ The project is aimed for usage of KiCad (version 7) to drawing of industrial ele
 Project is derived from KIPE for version 4 and was actively developed and used since year 2016 (for example see figure below).
 
 __KIPE is intended to run above the KiCad's project file and edit KiCad's schematic file to:__
+* "flatten" diagram
 * create the references for global labels
 * create the references for the components (eg. relays)
 * create pin number of the "subcomponents" (eg. contacts of the relay, input block of PLC etc.)
