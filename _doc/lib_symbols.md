@@ -45,9 +45,10 @@ There shall be defined user fields in each sub symbol:
     
 # Illustration
 Lets have the relay in the diagram. We placed the 2 symbols in the sheet (one is root symbol, second is sub symbol) and set their references manually to -K1 for the root symbol and -K1.1 for the subsymbol. By the manual setting of the references, we have created the "link between" root and sub symbol. See figure below:
- 
 
-Now, we saved the diagram and closed KiCad. Now we have to load KiCad project file into KIPE ```load test.kicad_pro``` run KIPE command ```mksubs``` and ```save``` the result. 
+![before_mksubs](img/before_mksubs.png)
+
+Now, we need to save the diagram and closed KiCad. Now we have to load KiCad project file into KIPE ```load test.kicad_pro``` run KIPE command ```mksubs``` and ```save``` the result. 
 
 Run in commandline:
 ```
@@ -62,3 +63,5 @@ Saving project... OK
 And after opening diagram in KiCad again, we have (see also figure below):
 * filled the location reference /2.A1 /2.A2 for root and sub symbols
 * PIN number on the sub symbol is rewritten from the settings in the root symbol
+
+![after_mksubs](img/after_mksubs.png)
