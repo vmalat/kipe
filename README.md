@@ -102,7 +102,7 @@ Here is the list of functions and the possibility of running them without specia
 | --- | --- | --- |
 | chkdup  | Checking of the duplicity symbols - the references | :heavy_check_mark:
 | mkcontent | Creating the TOC | :x: |
-| mksubs | Creating the link between symbols and "subsymbol". Eg. between relay's coil and it's contacts. | :x:
+| mksubs | Creating the link between symbols and "subsymbol". Eg. between relay's coil and it's contacts. | :x: [see symbols](_doc/lib_symbols.md)
 | mkrefs | Creating the link (page number and section) between global labels. | :heavy_check_mark:
 | chkrepo | Checking the status of the repository which is KIPE called from. | :x: Only Mercurial repository is supported.
 | mkrepoid | Sets the project variable ```${DOC_CHANGESET}``` according to the repository changeset. | :x: Only Mercurial repository is supported.
