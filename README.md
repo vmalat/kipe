@@ -19,9 +19,9 @@ __KIPE is intended to run above the KiCad's project file and edit KiCad's schema
 * fill repository changeset to the header of the schematics
 
 __There are few limitations to usage of the whole KIPE system:__
-* schematics shall be flat, hierarchical structure is not possible (hierarchic sheets are allowed, but only one instance per sheet/file)
+* schematics shall be flat, hierarchical structure is not possible (hierarchic sheets are allowed, but only one instance per sheet/file). It is recommended to run command ```mkflat``` right after command ```load```, see below.
 * hieararchical pins are not allowed
-* library component shall have special fileds
+* library component shall have special fields. See [Library Symbols](_doc/lib_symbols.md) to set symbol fields properly.
 
 __Example created by KIPE for KiCad 4:__
 
