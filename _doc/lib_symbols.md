@@ -62,6 +62,6 @@ Saving project... OK
 ```
 And after opening diagram in KiCad again, we have (see also figure below):
 * filled the location reference /2.A1 /2.A2 for root and sub symbols
-* PIN number on the sub symbol is rewritten from the settings in the root symbol
+* PIN numbers 11, 12, 13 of the sub symbol is rewritten from the settings in the root symbol
 
 ![after_mksubs](img/after_mksubs.png)
