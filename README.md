@@ -101,19 +101,19 @@ Here is the list of functions and the possibility of running them without specia
 | mkcontent | Creating the TOC | :x: |
 | mksubs | Creating the link between symbols and "subsymbol". Eg. between relay's coil and it's contacts. | :x:
 | mkrefs | Creating the link (page number and section) between global labels. | :heavy_check_mark:
-| chkrepo | Checking the status of the repository which is KIPE called from. | :warning: Only Mercurial repository is supported.
-| mkrepoid | Sets the project variable ```${DOC_CHANGESET}``` according to the repository changeset. | :warning: Only Mercurial repository is supported.
+| chkrepo | Checking the status of the repository which is KIPE called from. | :x: Only Mercurial repository is supported.
+| mkrepoid | Sets the project variable ```${DOC_CHANGESET}``` according to the repository changeset. | :x: Only Mercurial repository is supported.
 | mkrev REV | Sets the project variable ```${DOC_REV}```  according to REV. | :heavy_check_mark:
 | pquestion | Open points. Lists all text which contains ```#?``` | :heavy_check_mark:
 | ptodos | TODO. Lists all text which contains ```#TODO``` | :heavy_check_mark:
-| mkbom | Prints the BOM. | :warning: Will provide a list of symbol references, but without special fields inside the library the detais related to vendor etc. will not be accessible.
+| mkbom | Prints the BOM. | :x: Will provide a list of symbol references, but without special fields inside the library the detais related to vendor etc. will not be accessible.
 | mktitle | Adds the "KIPE standard" title block to each schematic file.| :heavy_check_mark:
 | mkpgnum | Sets the number of pages inside the project. | :heavy_check_mark:|
 | mkflat | Creates the "flat" structure of the project. Removes duplicity sheet, adapts symbol instances. | :heavy_check_mark:|
 | findcr REGEXP | Finds the location of symbol(s) given by the REGEXP. Eg. ```findcr -K.*``` will print all symbol with references start by -K | :heavy_check_mark:|
-| load PRO | Loads the project from \*.kicad_pro. Eg. load ../my_project.kicad_pro | :heavy_check_mark:|
-| save | Save changes in project done by KIPE. :exclamation: backup the project before saving project.| :warning: The shall be no error in executed command  
-save-force |  Save changes in project done by KIPE even if there were any error in executed commands. :exclamation: backup the project before saving project. | :heavy_check_mark:|
+| load PRO | Loads the project given by PRO from \*.kicad_pro file. Eg. load ../my_project.kicad_pro | :heavy_check_mark:|
+| save | Saves changes in project done by KIPE.  The shall be no error in previously executed command. <br>:exclamation: backup the project before saving project.| :heavy_check_mark: 
+|save-force |  Saves changes in project done by KIPE even if there were any error in executed commands. <br>:exclamation: backup the project before saving project. | :heavy_check_mark:|
 | help | Prints all command. | :heavy_check_mark:
 | exit | Exits the console. | :heavy_check_mark:|
 | console | Start console mode | :heavy_check_mark:| 
