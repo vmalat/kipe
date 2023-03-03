@@ -2,7 +2,9 @@
 
 >Project will be translated to english and migrated to the GIT in few weeks.
 
-The project is aimed for usage of KiCad (version 7) to drawing of industrial electric diagrams.
+The project is aimed for usage of KiCad (version 7) to drawing of industrial electric diagrams. There are probably more suitable and powerful applications for this job, but KiCad (eeschema) has been chosen from these reasons:
+* is free
+* the source files are pure texts, so additionaly parsing, tracking changes via versioning system is very easy
 
 Project is derived from KIPE for version 4 and was actively developed and used since year 2016 (for example see figure below).
 
