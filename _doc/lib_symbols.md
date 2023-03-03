@@ -41,3 +41,24 @@ There shall be defined user fields in each sub symbol:
 * __REF1__ - Location of the root symbol. The value of the field __REF1__ shall be set by KIPE.
 * __PINx__ - Defines pin number to change (if needed) as defined in the root symbol.
 
+    ![sub_symbol_properties](img/sub_symbol_properties.png)
+    
+# Illustration
+Lets have the relay in the diagram. We placed the 2 symbols in the sheet (one is root symbol, second is sub symbol) and set their references manually to -K1 for the root symbol and -K1.1 for the subsymbol. By the manual setting of the references, we have created the "link between" root and sub symbol. See figure below:
+ 
+
+Now, we saved the diagram and closed KiCad. Now we have to load KiCad project file into KIPE ```load test.kicad_pro``` run KIPE command ```mksubs``` and ```save``` the result. 
+
+Run in commandline:
+```
+python3 kipe.py load test.kicad_pro mksubs save
+```
+We have got result:
+```
+Loading project... OK
+Checking and creating references to subsymbols... OK
+Saving project... OK
+```
+And after opening diagram in KiCad again, we have (see also figure below):
+* filled the location reference /2.A1 /2.A2 for root and sub symbols
+* PIN number on the sub symbol is rewritten from the settings in the root symbol
