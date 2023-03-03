@@ -122,3 +122,5 @@ Here is the list of functions and the possibility of running them without specia
 | lang-en | Switching to english language | :heavy_check_mark:|
 | lang-cz | Switching to czech language | :heavy_check_mark:|
 
+## Instalation
+Just copy or clone it and run by python3.
