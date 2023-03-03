@@ -101,15 +101,15 @@ Here is the list of functions and the possibility of running them without specia
 | Command | Function | Runs without special conditions |
 | --- | --- | --- |
 | chkdup  | Checking of the duplicity symbols - the references | :heavy_check_mark:
-| mkcontent | Creating the TOC | :x: |
-| mksubs | Creating the link between symbols and "subsymbol". Eg. between relay's coil and it's contacts. | :x: [see symbols](_doc/lib_symbols.md)
+| mkcontent | Creating the TOC | :x: Description not finished yet.| 
+| mksubs | Creating the link between symbols and "subsymbol". Eg. between relay's coil and it's contacts. | :x: See [Library Symbols](_doc/lib_symbols.md) to set symbol fields properly.
 | mkrefs | Creating the link (page number and section) between global labels. | :heavy_check_mark:
 | chkrepo | Checking the status of the repository which is KIPE called from. | :x: Only Mercurial repository is supported.
 | mkrepoid | Sets the project variable ```${DOC_CHANGESET}``` according to the repository changeset. | :x: Only Mercurial repository is supported.
 | mkrev REV | Sets the project variable ```${DOC_REV}```  according to REV. | :heavy_check_mark:
 | pquestion | Open points. Lists all text which contains ```#?``` | :heavy_check_mark:
 | ptodos | TODO. Lists all text which contains ```#TODO``` | :heavy_check_mark:
-| mkbom | Prints the BOM. | :x: Will provide a list of symbol references, but without special fields inside the library the detais related to vendor etc. will not be accessible.
+| mkbom | Prints the BOM. | :x: Will provide a list of symbol references, but without special fields inside the library the detais related to vendor etc. will not be accessible. See [Library Symbols](_doc/lib_symbols.md) to set symbol fields properly.
 | mktitle | Adds the "KIPE standard" title block to each schematic file.| :heavy_check_mark:
 | mkpgnum | Sets the number of pages inside the project. | :heavy_check_mark:|
 | mkflat | Creates the "flat" structure of the project. Removes duplicity sheet, adapts symbol instances. | :heavy_check_mark:|
