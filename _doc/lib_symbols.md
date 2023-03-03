@@ -43,7 +43,7 @@ There shall be defined user fields in each sub symbol:
 
     ![sub_symbol_properties](img/sub_symbol_properties.png)
     
-# Illustration
+## Illustration
 Lets have the relay in the diagram. We placed the 2 symbols in the sheet (one is root symbol, second is sub symbol) and set their references manually to -K1 for the root symbol and -K1.1 for the subsymbol. By the manual setting of the references, we have created the "link between" root and sub symbol. See figure below:
 
 ![before_mksubs](img/before_mksubs.png)
