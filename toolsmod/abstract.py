@@ -108,7 +108,7 @@ class Abstract():
         nodes = [self]
         self.getChilds(nodes)
         for ii in nodes:
-            r = ii._replace('^ {'+str(ii.nested)+'}\(property "'+str(field)+'" .*\(at ([0-9]*\.[0-9]*) ([0-9]*\.[0-9]*) ([0-9]*)\).*$', (x,y,rot,))
+            r = ii._replace('^ {'+str(ii.nested)+'}\(property "'+str(field)+'" .*\(at ([0-9]*\.?[0-9]*) ([0-9]*\.?[0-9]*) ([0-9]*)\).*$', (x,y,rot,))
             if r:
                 return r
 
