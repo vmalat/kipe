@@ -34,7 +34,7 @@ There shall be defined user fields in each root symbol:
 * __VENDORID__ - means the type of the device, manufacturer id etc. Mandatory for BOM purposes.
 
     ![root_symbol_properties](img/root_symbol_properties.png)
-    
+* __ALLOW_SUBS__ - if no subcomponent are defined for the root symbol, this user field ensures the usage of subcomponents in the diagram directly. The content of the user field can be empty.    
 ## Sub symbol - creating user defined fiels
 
 There shall be defined user fields in each sub symbol:
