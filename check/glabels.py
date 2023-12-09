@@ -9,6 +9,8 @@ Lang.add('en','checkGlabels_001','Creating references for global labels... ')
 Lang.add('en','checkGlabels_002','Global label %s missing, last is on page %d')
 Lang.add('en','checkGlabels_003','Previous and next global labels %s are on same page %d')
 
+glabels_loc_format = '%.3g'
+
 def calcXYref(comp):
     offset = 2.54
     x = comp.getPosX()
@@ -87,10 +89,10 @@ def checkGlabels(project, cmdline):
                 sec = ii[jj]
                 frst.setField('Intersheetrefs', '/'+sec.getPositionHuman())
                 x, y, orient = calcXYref(frst)
-                frst.setFieldPos('Intersheetrefs', str(round(x,2)), str(round(y,2)), str(orient))
+                frst.setFieldPos('Intersheetrefs', glabels_loc_format%x, glabels_loc_format%y, str(orient))
                 sec.setField('Intersheetrefs', '/'+frst.getPositionHuman())
                 x, y, orient = calcXYref(sec)
-                sec.setFieldPos('Intersheetrefs', str(round(x,2)), str(round(y,2)), str(orient))
+                sec.setFieldPos('Intersheetrefs', glabels_loc_format%x, glabels_loc_format%y, str(orient))
                 frst.setPropertyJustifyNone('Intersheetrefs')
                 sec.setPropertyJustifyNone('Intersheetrefs')
                 
