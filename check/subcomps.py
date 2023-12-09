@@ -75,13 +75,13 @@ def checkSubcomps(project, cmdline):
                     r = re.match('^\s*\S*\.(\d*)\s*$',kk.getReference())
                     if r:
                         actsub = int(r.group(1))
-                        if ii.getLibrary() != '_material': #_material se nekontroluje na subkomponenty
+                        if ii.getField('ALLOW_SUBS') is None: #NOSUBCOMPS field inhibits the check of subcomponents
                             if actsub > subcomps:
                                 if not err:
                                     print(FAIL +'CHYBA'+ENDC)
                                 err = True
                                 print(FAIL + Lang.get('chkSubcomps_002')%(comp, actsub) +ENDC)
-                                break
+                                #break
                 break
             else:
                 m = re.match('^\s*(\S*)\s*;\s*(\S*)\s*;\s*(\S*)\s*$', subfield)
